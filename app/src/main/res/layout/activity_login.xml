@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="120dp"
+    tools:context=".Activity.LoginActivity">
+
+    <TextView
+        android:id="@+id/text_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Logo here.." />
+
+    <LinearLayout
+        android:id="@+id/layout_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_logo"
+        android:orientation="vertical"
+        android:singleLine="true">
+
+        <EditText
+            android:id="@+id/edit_Login_User"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Username"
+            android:inputType="textEmailAddress"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/edit_Login_Pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_login"
+        android:onClick="btn_Click"
+        android:text="LOGIN" />
+
+    <TextView
+        android:id="@id/text_or"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_login"
+        android:gravity="center"
+        android:text="or"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/button_Regis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_or"
+        android:onClick="btn_Click"
+        android:text="REGISTER" />
+</RelativeLayout>

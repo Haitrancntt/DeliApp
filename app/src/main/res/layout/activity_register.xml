@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.haitr.deliapp.Activity.RegisterActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_logo"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="REGISTER"
+            android:textSize="40dp" />
+
+        <EditText
+            android:id="@+id/edit_Regis_User"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:hint="Username"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/edit_Regis_Pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Password"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/edit_Regis_ReType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Re-Password"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/edit_Regis_Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Email"
+            android:singleLine="true" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:onClick="btn_Register"
+            android:text="register"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
