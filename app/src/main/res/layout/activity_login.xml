@@ -50,7 +50,7 @@
         android:text="LOGIN" />
 
     <TextView
-        android:id="@id/text_or"
+        android:id="@+id/text_or"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/button_login"

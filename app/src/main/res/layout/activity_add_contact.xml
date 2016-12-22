@@ -16,37 +16,20 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="REGISTER"
+            android:text="ADD CONTACT"
             android:textSize="40dp" />
 
         <EditText
-            android:id="@+id/edit_Regis_User"
+            android:id="@+id/edit_Add_Name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
-            android:gravity="center"
-            android:hint="Username"
-            android:singleLine="true" />
-
-        <EditText
-            android:id="@+id/edit_Regis_Pass"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:hint="Password"
-            android:inputType="textPassword"
-            android:singleLine="true" />
-
-        <EditText
-            android:id="@+id/edit_Regis_Name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:gravity="center"
             android:hint="Name"
             android:singleLine="true" />
 
         <EditText
-            android:id="@+id/edit_Regis_Email"
+            android:id="@+id/edit_Add_Email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -57,8 +40,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:onClick="btn_Register"
-            android:text="register"
+            android:onClick="btn_AddContact"
+            android:text="ADD"
             android:textSize="20dp" />
 
     </LinearLayout>
