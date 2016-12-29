@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context="com.example.haitr.deliapp.Activity.GroupChatActivity">
+
+    <TextView
+        android:id="@+id/txt_roomname"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:gravity="center"
+        android:text="[ROOM_NAME]"
+        android:textColor="@color/colorSwipe"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/list_group"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="70"></ListView>
+
+    <EditText
+        android:id="@+id/edit_chat"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="end"
+        android:layout_weight="10"
+        android:onClick="button_chat"
+        android:text="SEND"
+        android:textColor="@color/colorSwipe"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

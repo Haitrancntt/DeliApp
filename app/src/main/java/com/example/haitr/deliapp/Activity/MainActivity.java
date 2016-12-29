@@ -15,7 +15,7 @@ import com.example.haitr.deliapp.Class.UserSession;
 import com.example.haitr.deliapp.Fragment.ChatFragment;
 import com.example.haitr.deliapp.Fragment.ContactFragment;
 import com.example.haitr.deliapp.Fragment.SettingFragment;
-import com.example.haitr.deliapp.Fragment.ShareLocationFragment;
+import com.example.haitr.deliapp.Fragment.MessageFragment;
 import com.example.haitr.deliapp.R;
 
 import java.util.ArrayList;
@@ -53,9 +53,9 @@ public class MainActivity extends AppCompatActivity {
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFragment(new ContactFragment(), "CONTACT");
-        adapter.addFragment(new ChatFragment(), "CHAT");
-        adapter.addFragment(new ShareLocationFragment(), "WALL");
-        adapter.addFragment(new SettingFragment(), "SETTING");
+        adapter.addFragment(new ChatFragment(), "ROOM");
+        adapter.addFragment(new MessageFragment(), "MESSAGE");
+        adapter.addFragment(new SettingFragment(), "ABOUT US");
         viewPager.setAdapter(adapter);
     }
 

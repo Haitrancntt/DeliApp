@@ -62,10 +62,12 @@ public class ContactFragment extends Fragment {
         hasOptionsMenu();
         HashMap<String, String> user = session.getUserDetails();
         sUsername = user.get(UserSession.KEY_NAME);
+
         contactAdapter = new ContactAdapter(getActivity(), myList);
         listView = (ListView) v.findViewById(R.id.list_contact);
         listView.setAdapter(contactAdapter);
         GetContact(sUsername);
+
         btn_Add = (Button) v.findViewById(R.id.image_button_add);
         btn_Add.setOnClickListener(new View.OnClickListener() {
             @Override

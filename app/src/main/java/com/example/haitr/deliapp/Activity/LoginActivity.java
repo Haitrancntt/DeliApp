@@ -38,6 +38,7 @@ public class LoginActivity extends AppCompatActivity {
     private String USER_NAME = "_UserName";
     private UserSession session;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,8 +51,8 @@ public class LoginActivity extends AppCompatActivity {
         btnRegis = (Button) findViewById(R.id.button_Regis);
         edName = (EditText) findViewById(R.id.edit_Login_User);
         edPass = (EditText) findViewById(R.id.edit_Login_Pass);
-
         session = new UserSession(getApplicationContext());
+
     }
 
     public void btn_Click(View view) {
@@ -127,7 +128,7 @@ public class LoginActivity extends AppCompatActivity {
                 if (s.equalsIgnoreCase("success")) {
                     Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                     session.createUserLoginSession(username);
-                   // intent.putExtra(USER_NAME, username);
+                    // intent.putExtra(USER_NAME, username);
                     finish();
                     startActivity(intent);
                 } else {

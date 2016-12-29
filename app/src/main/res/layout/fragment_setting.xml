@@ -1,13 +1,62 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
     tools:context="com.example.haitr.deliapp.Fragment.SettingFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="40"
+        android:src="@drawable/logo" />
+
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:gravity="center"
+        android:text="DEVELOP TEAM"
+        android:textColor="@color/colorSwipe"
+        android:textSize="30dp"
+        android:textStyle="bold" />
 
-</FrameLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="We deliver IT consulting services,full-cycle software development and testing capabilities to improve quality and accelerate the delivery of innovative software solutions.Deli team are knowledgeable, highly collaborative and integrate seamlessly into your existing development strategy as an extension of your team.Experienced, independent thinkers offer unique, inventive solutions and implement effective processes, frameworks and proprietary toolkits to make every engagement successful."
+            android:textSize="20dp" />
+    </ScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:gravity="center"
+        android:text="MORE DETAILED"
+        android:textColor="@color/colorSwipe"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Thanh Huy Le - Leader \nThach Nguyen - Developer\nHien Nguyen - Developer\nHai Tran - Developer\nDanh Le - Tester\nXuyen Hinh - Tester\n Any questions please email to deli@gmail.com\nor\call 0906729567 , 0937398353\n Thank for your support"
+            android:textSize="20dp" />
+    </ScrollView>
+
+
+</LinearLayout>

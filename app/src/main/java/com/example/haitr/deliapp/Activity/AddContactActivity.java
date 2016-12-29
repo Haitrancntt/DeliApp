@@ -11,7 +11,6 @@ import android.widget.Toast;
 
 import com.example.haitr.deliapp.Class.AddContactClass;
 import com.example.haitr.deliapp.Class.UserSession;
-import com.example.haitr.deliapp.Fragment.ContactFragment;
 import com.example.haitr.deliapp.R;
 
 import java.util.HashMap;
@@ -46,7 +45,7 @@ public class AddContactActivity extends Activity {
         sContactName = edNameContact.getText().toString().trim().toLowerCase();
         sContactEmail = edEmailContact.getText().toString().trim().toLowerCase();
         AddContact(sUserName, sContactName, sContactEmail);
-        Intent intent_contact = new Intent(AddContactActivity.this, ContactFragment.class);
+        Intent intent_contact = new Intent(AddContactActivity.this, MainActivity.class);
         startActivity(intent_contact);
     }
 

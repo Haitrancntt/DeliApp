@@ -7,7 +7,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 import com.example.haitr.deliapp.Fragment.ChatFragment;
 import com.example.haitr.deliapp.Fragment.ContactFragment;
 import com.example.haitr.deliapp.Fragment.SettingFragment;
-import com.example.haitr.deliapp.Fragment.ShareLocationFragment;
+import com.example.haitr.deliapp.Fragment.MessageFragment;
 
 import java.util.Locale;
 
@@ -30,7 +30,7 @@ public class PageAdapter extends FragmentPagerAdapter {
                 ContactFragment contactFragment = new ContactFragment();
                 return contactFragment;
             case 2:
-                ShareLocationFragment shareLocationFragment = new ShareLocationFragment();
+                MessageFragment shareLocationFragment = new MessageFragment();
                 return shareLocationFragment;
             case 3:
                 SettingFragment settingFragment = new SettingFragment();

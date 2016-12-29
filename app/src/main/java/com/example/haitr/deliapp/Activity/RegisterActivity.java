@@ -35,6 +35,10 @@ public class RegisterActivity extends AppCompatActivity {
     public void btn_Register(View view) {
         Intent intent_register = new Intent(RegisterActivity.this, LoginActivity.class);
         registerUser();
+        edName.setText("");
+        edEmail.setText("");
+        edPass.setText("");
+        edUser.setText("");
         startActivity(intent_register);
 
     }
